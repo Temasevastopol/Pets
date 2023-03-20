@@ -34,13 +34,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
 .list .card h4{
     white-space: nowrap;
 }
 .list .card .icon{
     width: 60px;
-    height: 60px;
+    height: 60px;    
 }
 .list .card:nth-child(1){
     width:82px;
