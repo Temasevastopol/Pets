@@ -1,6 +1,5 @@
 header{
-    height: 120px;
-    padding: 4.6875% 3.125% 0;
+    height: 120px;    
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -29,6 +28,8 @@ header{
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
+    display: flex;
+    align-items: center;
     letter-spacing: 0.06em;    
     color: #F1CDB3;
     white-space: nowrap;
@@ -43,7 +44,8 @@ header{
     line-height: 15px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
-    text-align: center;
+    display: flex;
+    align-items: center;
     white-space: nowrap;
 }
 
