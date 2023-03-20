@@ -15,7 +15,8 @@
 }
 .help-contant h3{
     width: 308px;
-    height: 90px;
+    height: 90px;    
+    text-align: center;
 }
 .list {
     max-width: 1026px;
@@ -23,7 +24,9 @@
     height: 281px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     column-gap: 120px;
+    row-gap: 55px;
 }
 .list .card {
     height: 113px;
@@ -57,4 +60,41 @@
 .list .card:nth-child(3) .icon{
     background-image: url(../../svg/icon-toys.svg);
 }
+.list .card:nth-child(4){
+    width: 153px;
+}
+.list .card:nth-child(4) .icon{
+    background-image: url(../../svg/icon-bowls-and-cups\ \(1\).svg);
+}
+.list .card:nth-child(5){
+    width: 101px;
+}
+.list .card:nth-child(5) .icon{
+    background-image: url(../../svg/icon-shampoos.svg);
+}
 
+.list .card:nth-child(6){    
+    width: 89px;
+    margin-left: calc(100%*84/1026);
+}
+.list .card:nth-child(6) .icon{
+    background-image: url(../../svg/icon-vitamins.svg);
+}
+.list .card:nth-child(7){
+    width: 101px;
+}
+.list .card:nth-child(7) .icon{
+    background-image: url(../../svg/icon-medicines.svg);
+}
+.list .card:nth-child(8){
+    width: 165px;
+}
+.list .card:nth-child(8) .icon{
+    background-image: url(../../svg/icon-collars-leashes.svg);
+}
+.list .card:nth-child(9){
+    width: 143px;
+}
+.list .card:nth-child(9) .icon{
+    background-image: url(../../svg/icon-vitamins.svg);
+}
