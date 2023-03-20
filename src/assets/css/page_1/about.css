@@ -1,0 +1,32 @@
+.about {
+    height: 588px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+}
+.about-content {
+    max-width: 1200px;
+    width: 100%;
+    height: 408px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 125px;
+}
+.about-pets {
+    width: 300px;
+    height: 408px;
+    background-image: url(../../img/about-pets.png);
+}
+.text-content {
+    width: 430px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-content h3{
+    width: 370px;
+    height: 90px;
+}
