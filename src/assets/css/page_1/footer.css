@@ -63,6 +63,7 @@ footer{
     width: 179px;
     height: 23px;
     color: #F1CDB3;
+    white-space: nowrap;
 }
 .locations {
     width: 302px;
@@ -73,7 +74,32 @@ footer{
     height: 90px;
     color: #FFFFFF;
 }
+.locations .town:nth-child(1){
+    width: 302px;
+    height: 46px;    
+}
+.town h4:first-of-type{
+    width: 260px;
+    height: 46px; 
+}
+.town h4:last-of-type{
+    width: 260px;
+    height: 23px; 
+}
+
+.locations .town:nth-child(2){
+    width: 302px;
+    height: 32px;    
+}
 .town{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.town .icon{
+    width: 22px;
+    height: 32px;
+    background-image: url(../../svg/icon-marker.svg);
     
 }
 .town h4{
