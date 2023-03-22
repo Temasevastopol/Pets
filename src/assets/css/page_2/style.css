@@ -1,0 +1,64 @@
+@import url(../reset.css);
+@import url(../constants.css);
+@import url(../../css/page_1/header.css);
+@import url(../../css/page_1/footer.css);
+
+header{
+    background: #FFFFFF;
+}
+.logo-title{
+    color: #545454;
+}
+.logo-subtitle{
+    color: #292929;
+}
+.pets {
+    height: 1342px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6F6F6;
+}
+.pets-content {
+    width: 1200px;
+    height: 1162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.pets-content h3{
+    width: 400px;
+    height: 90px;
+    
+}
+.cards_container {
+    width: 1200px;
+    height: 930px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-foto {
+    width: 270px;
+    height: 270px;    
+}
+.slider-foto{    
+    background-image: url(../../img/pets-katrine.png);
+}
+.navigation {
+    width: 340px;
+    height: 52px;
+}
