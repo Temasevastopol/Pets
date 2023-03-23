@@ -55,10 +55,34 @@ header{
     width: 270px;
     height: 270px;    
 }
-.slider-foto{    
+.card:nth-child(1) .slider-foto{
     background-image: url(../../img/pets-katrine.png);
+}
+.card:nth-child(2) .slider-foto{
+    background-image: url(../../img/pets-jennifer.png);
+}
+.card:nth-child(3) .slider-foto{
+    background-image: url(../../img/pets-woody.png);
+}
+.card:nth-child(4) .slider-foto{
+    background-image: url(../../img/pets-sophia.png);
+}
+.card:nth-child(5) .slider-foto{
+    background-image: url(../../img/pets-timmy.png);
+}
+.card:nth-child(6) .slider-foto{
+    background-image: url(../../img/pets-charly.png);
+}
+.card:nth-child(7) .slider-foto{
+    background-image: url(../../img/pets-scarlet.png);
+}
+.card:nth-child(8) .slider-foto{
+    background-image: url(../../img/pets-freddie.png);
 }
 .navigation {
     width: 340px;
     height: 52px;
+}
+.cards_container .card .button-secondary{
+    background-color: transparent;
 }
