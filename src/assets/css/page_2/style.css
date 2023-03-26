@@ -28,10 +28,12 @@ header{
     justify-content: space-between;
     
 }
-.pets-content h3{
+.pets-content h1{
     width: 400px;
     height: 90px;
-    
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
 }
 .cards_container {
     width: 1200px;

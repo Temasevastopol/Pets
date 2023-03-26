@@ -1,15 +1,15 @@
-h2, h3, h4, h5{
+h1, h2, h3, h4, h5{
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     color: #545454;
 }
 
-h2, h3{
+h1, h2, h3{
     line-height: 130%;
 }
 
-h2{   
+h1, h2{   
     font-size: 44px;
 }
 
