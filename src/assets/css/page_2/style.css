@@ -85,6 +85,9 @@ header{
     width: 340px;
     height: 52px;
 }
-.cards_container .card .button-secondary{
-    background-color: transparent;
+.cards_container .card:hover {
+    cursor: pointer;
+}
+.cards_container .card:hover > .button-secondary{
+    background: #FDDCC4;
 }

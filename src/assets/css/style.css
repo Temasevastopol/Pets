@@ -8,3 +8,6 @@
 @import url(./page_1/donate.css);
 @import url(./page_1/footer.css);
 
+html{    
+    scroll-behavior: smooth;
+}

@@ -54,10 +54,15 @@
 }
 .slider-title {
 }
-.card .button-secondary{
-    background-color: transparent;
-}
+
 .pets .button-primary {
     width: 261px;
     height: 52px;
+}
+
+.slider .card:hover {
+    cursor: pointer;
+}
+.slider .card:hover > .button-secondary{
+    background: #FDDCC4;
 }
