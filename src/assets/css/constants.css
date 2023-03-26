@@ -98,4 +98,7 @@ header, main, footer{
 }
 .button-arrow:hover{
     background: #FDDCC4;
+    background-image: url(../svg/Arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }

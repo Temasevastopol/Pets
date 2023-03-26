@@ -62,5 +62,34 @@ nav ul li a.paragraph-l{
     color: #CDCDCD;
 }
 
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a:active::after{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    height: 3px;    
+    background: #F1CDB3;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li:nth-child(1) a::after{    
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    height: 3px;    
+    background: #F1CDB3;
+    width: 100%;
+}
+nav ul li:hover a{
+    color:#FFFFFF;
+}
+nav ul li:hover ~ #link-1{
+    display: none;
+}
 
 

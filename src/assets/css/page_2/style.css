@@ -12,6 +12,9 @@ header{
 .logo-subtitle{
     color: #292929;
 }
+nav ul li a:hover{
+    color: #4C4C4C;
+}
 .pets {
     height: 1342px;    
     display: flex;
