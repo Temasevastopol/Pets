@@ -1,0 +1,99 @@
+@import url(../reset.css);
+@import url(../constants.css);
+@import url(../../css/page_1/header.css);
+@import url(../../css/page_1/footer.css);
+
+header{
+    background: #FFFFFF;
+}
+.logo-title{
+    color: #545454;
+}
+.logo-subtitle{
+    color: #292929;
+}
+nav ul li a:hover{
+    color: #4C4C4C;
+}
+.pets {
+    height: 1342px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6F6F6;
+}
+.pets-content {
+    width: 1200px;
+    height: 1162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.pets-content h1{
+    width: 400px;
+    height: 90px;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+.cards_container {
+    width: 1200px;
+    height: 930px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-foto {
+    width: 270px;
+    height: 270px;    
+}
+.card:nth-child(1) .slider-foto{
+    background-image: url(../../img/pets-katrine.png);
+}
+.card:nth-child(2) .slider-foto{
+    background-image: url(../../img/pets-jennifer.png);
+}
+.card:nth-child(3) .slider-foto{
+    background-image: url(../../img/pets-woody.png);
+}
+.card:nth-child(4) .slider-foto{
+    background-image: url(../../img/pets-sophia.png);
+}
+.card:nth-child(5) .slider-foto{
+    background-image: url(../../img/pets-timmy.png);
+}
+.card:nth-child(6) .slider-foto{
+    background-image: url(../../img/pets-charly.png);
+}
+.card:nth-child(7) .slider-foto{
+    background-image: url(../../img/pets-scarlet.png);
+}
+.card:nth-child(8) .slider-foto{
+    background-image: url(../../img/pets-freddie.png);
+}
+.navigation {
+    width: 340px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards_container .card:hover {
+    cursor: pointer;
+}
+.cards_container .card:hover > .button-secondary{
+    background: #FDDCC4;
+}

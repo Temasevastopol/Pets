@@ -1,0 +1,95 @@
+header{
+    height: 120px;    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+    background: url(../../img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    background-image: url(../../img/start-screen-background.png);
+}
+
+.header-conteiner{
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 184px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-title {
+    width: 184px;
+    height: 35px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;    
+    color: #F1CDB3;
+    white-space: nowrap;
+}
+.logo-subtitle {
+    width: 179px;
+    height: 15px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+nav ul{
+    width: 443px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a.paragraph-l{
+    color: #CDCDCD;
+}
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a:active::after{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    height: 3px;    
+    background: #F1CDB3;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li:nth-child(1) a::after{    
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    height: 3px;    
+    background: #F1CDB3;
+    width: 100%;
+}
+nav ul li:hover a{
+    color:#FFFFFF;
+}
+nav ul li:hover ~ #link-1{
+    display: none;
+}
+
+
