@@ -8,7 +8,8 @@ footer{
     background-image: url(../../img/footer-background.png);    
 }
 .footer-contant {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 310px;
     display: flex;
     justify-content: space-between;    
