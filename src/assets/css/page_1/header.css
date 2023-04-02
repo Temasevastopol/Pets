@@ -96,7 +96,7 @@ nav ul li:hover ~ #link-1{
 }
 
 /* Media */
-@media (max-width: 1280px){
+@media (max-width: 1200px){
     header{
         padding: calc(100%*60/1280) calc(100%*40/1280) 0;
     }
