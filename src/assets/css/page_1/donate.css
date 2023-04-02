@@ -66,3 +66,50 @@
         order: 2;
     }
 }
+
+@media (max-width: 321px){
+    .donate,
+    .donate-contant{
+        height: 542.2px;
+    }
+    .contant{
+        max-width: 300px;
+        height: 281px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contant h3{
+        width: 210px;
+        font-size: 25px;        
+        text-align: center;
+    }
+    .donate-contant h5{
+        flex: 0;
+        width: 273px;
+        height: 24px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .donate .donate-contant p{
+        flex: 0;
+        width: 280px;
+        height: 90px;
+        font-size: 11px;
+    }
+    .credit-card{
+        width: 281px;
+        height: 43px;
+    }
+    .credit-card h4{
+        width: 206px;
+        height: 17px;
+        font-size: 15px;
+    }
+
+    .donate-foto{
+        width: 260px;
+        height: 135.2px;
+        background-image: url(../../img/donation-dog_320.png);
+    }
+    
+}
