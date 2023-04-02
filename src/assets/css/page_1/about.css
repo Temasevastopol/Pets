@@ -51,3 +51,41 @@
         order: 2;
     }
 }
+@media (max-width: 321px){
+    .about{
+        height: 974px;
+        padding: 0;
+    }
+    .about-content {
+        max-width: 300px;
+        height: 890px;
+    }
+    .text-content{
+        width: 300px;
+        height: 494px;
+    }
+    .text-content h3{
+        width: 250px;
+        height: 64px;
+        font-size: 25px;
+        align-self: center;
+        text-align: center;
+    }
+    .text-content p{
+        text-align: justify;
+        align-self: center;
+    }
+    .text-content p:nth-of-type(1){
+        width: 260px;
+        height: 144px;
+    }
+    .text-content p:nth-of-type(2){
+        width: 260px;
+        height: 239px;
+    }
+    .about-pets {
+        width: 260px;
+        height: 353.6px;
+        background-image: url(../../img/about-pets_320.png);
+    }
+}
