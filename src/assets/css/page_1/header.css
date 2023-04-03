@@ -91,10 +91,20 @@ nav ul li:hover a{
 nav ul li:hover ~ #link-1{
     display: none;
 }
+
 .burger{
     display: none;
+    width: 30px;
+    height: 22px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
 }
-
+.burger .line{
+    width: 30px;
+    height: 0px;
+    border: 1px solid #F1CDB3;
+}
 /* Media */
 @media (max-width: 1200px){
     header{
@@ -112,28 +122,24 @@ nav ul li:hover ~ #link-1{
     }
 }
 
-@media (max-width: 321px){
+@media (max-width: 320px){
     
     header{
-        padding: calc(100%*30/320) calc(100%*53/320) 0 calc(100%*10/320);
+        padding: calc(100%*30/320) calc(100%*53/320) calc(100%*30/320) calc(100%*10/320);
         position: relative;
         overflow-y: hidden;
-    }    
+        align-items: center;  
+    }
+    .header-conteiner{
+        width: 260px;
+        height: 60px;
+    }
     nav{
         position: fixed;
         left: 320px;
+        display: none;
     }
     .burger{
-        display: block;
-        width: 30px;
-        height: 22px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .burger .line{
-        width: 30px;
-        height: 0px;
-        border: 1px solid #F1CDB3;
     }
 }

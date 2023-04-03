@@ -17,6 +17,10 @@
 .pets-contant h3{
     width: 400px;
     height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .slider {
     width: 1200px;

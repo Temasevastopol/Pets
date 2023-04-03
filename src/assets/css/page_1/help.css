@@ -134,7 +134,11 @@
     .help-contant{
         height: 745px;
     }
+    .help{
+        padding: 0;
+    }
     .help-contant{
+        padding-top: calc(100%*42/320);
         justify-content: space-around;
     }
     .help-contant h3{
