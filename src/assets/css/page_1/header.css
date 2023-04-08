@@ -88,9 +88,6 @@ nav ul li:nth-child(1) a::after{
 nav ul li:hover a{
     color:#FFFFFF;
 }
-nav ul li:hover ~ #link-1{
-    display: none;
-}
 
 .burger{
     display: none;
@@ -104,6 +101,9 @@ nav ul li:hover ~ #link-1{
     width: 30px;
     height: 0px;
     border: 1px solid #F1CDB3;
+}
+input{
+    display: none;
 }
 /* Media */
 @media (max-width: 1200px){
@@ -127,19 +127,53 @@ nav ul li:hover ~ #link-1{
     header{
         padding: calc(100%*30/320) calc(100%*53/320) calc(100%*30/320) calc(100%*10/320);
         position: relative;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
         align-items: center;  
     }
     .header-conteiner{
         width: 260px;
         height: 60px;
     }
+    .logo,
+    .burger{
+        position: relative;
+        z-index: 10;
+    }
     nav{
         position: fixed;
         left: 320px;
-        display: none;
+        top: 0;
+        width: 320px;
+        height: 823px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #292929;
+        z-index: 1;
+        transition: 0.5s ease-in-out;
     }
+    nav ul{
+        width: 243px;
+        height: 327px;
+        flex-direction: column;
+    }
+    nav ul li a.paragraph-l{
+        font-size: 32px;
+    }
+    nav ul li:nth-child(1) a.paragraph-l{
+        color: #FAFAFA;
+    }
+
     .burger{
         display: flex;
+        transition: 0.5s ease-in-out;
+    }
+    #menu__toggle:checked ~ nav{
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+    #menu__toggle:checked + label{
+        transform: rotateZ(90deg);
+        transition: 0.5s ease-in-out;
     }
 }
