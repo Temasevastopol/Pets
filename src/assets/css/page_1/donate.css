@@ -50,12 +50,12 @@
 
 /* Media */
 
-@media (max-width: 769px){
+@media (max-width: 900px){
     .donate,
     .donate-contant{
-        max-width: 768px;
+        max-width: 900px;
         width: 100%;
-        height: 783px;
+        min-height: 783px;        
     }
     .donate-contant{
         flex-direction: column;
@@ -67,10 +67,10 @@
     }
 }
 
-@media (max-width: 321px){
+@media (max-width: 510px){
     .donate,
     .donate-contant{
-        height: 542.2px;
+        min-height: 542.2px;    
     }
     .contant{
         max-width: 300px;

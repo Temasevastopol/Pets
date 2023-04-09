@@ -65,7 +65,7 @@
     }
 }
 
-@media (max-width: 321px){
+@media (max-width: 600px){
     .start_screen{
         height: 733px;
         padding-top: calc(100%*60/320);
