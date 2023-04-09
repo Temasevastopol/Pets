@@ -171,6 +171,7 @@ input{
     #menu__toggle:checked ~ nav{
         left: 0;
         transition: 0.5s ease-in-out;
+        position: absolute;
     }
     #menu__toggle:checked + label{
         transform: rotateZ(90deg);
