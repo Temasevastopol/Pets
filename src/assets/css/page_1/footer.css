@@ -142,7 +142,8 @@ footer{
         
     }
     .footer-contant{
-        height: 779px;
+        max-height: 779px;
+        height: 100%;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -179,6 +180,7 @@ footer{
         width: 260px;
         height: 269px;
         background-image: url(../../img/footer-puppy_320.png);
+        justify-self: flex-end;
     }
     
 }
