@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .pets-contant h3{
     width: 400px;
@@ -23,8 +23,17 @@
     align-items: center;
 }
 .slider {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 435px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-wraper{
+    max-width: 996px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +47,7 @@
     height: 435px;
     background: #FAFAFA;
     border-radius: 9px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,13 +57,13 @@
     width: 270px;
     height: 270px;    
 }
-.slider .card:nth-child(2) .slider-foto{    
+.slider .card:nth-child(1) .slider-foto{    
     background-image: url(../../img/pets-katrine.png);
 }
-.slider .card:nth-child(3) .slider-foto{    
+.slider .card:nth-child(2) .slider-foto{    
     background-image: url(../../img/pets-jennifer.png);
 }
-.slider .card:nth-child(4) .slider-foto{    
+.slider .card:nth-child(3) .slider-foto{    
     background-image: url(../../img/pets-woody.png);
 }
 .slider-title {
@@ -71,7 +81,7 @@
     background: #FDDCC4;
 }
 /* Media */
-@media(max-width: 1281px){
+@media(max-width: 1200px){
    .pets{        
         padding-top: calc(100%*80/768);
    }
@@ -81,10 +91,13 @@
         height: 697px;
    }
    .slider{
-        width: 708px;
+        max-width: 708px;
         height: 435px;
    }  
-   .slider .card:nth-child(4){
+   .slider-wraper{
+    max-width: 580px;
+   }
+   .slider .card:nth-child(3){
         display: none;
    }
 }
@@ -94,8 +107,8 @@
         padding: 0;
     }
     .pets-contant{
-        height: 707px;
-        justify-content: space-between;
+        min-height: 707px;
+        height: 100%;
     }
     .pets-contant h3{
         width: 300px;
@@ -110,10 +123,10 @@
         justify-content: space-around;
         align-content: space-between;
     }
-    .slider .card:nth-child(3) {    
+    .slider .card:nth-child(2) {    
         display: none;
     }
-    .slider .card:nth-child(2){
+    .slider-wraper{
         order: -1;
         flex-basis: 100%;
     }
@@ -121,4 +134,5 @@
         justify-content: flex-start;
         row-gap: 30px;
     }
+
 }
