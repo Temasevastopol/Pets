@@ -33,6 +33,7 @@
 .carusel{
     overflow: hidden;
 }
+.carusel,
 .slider-wraper,
 .item_active{
     max-width: 996px;
@@ -42,6 +43,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .item_active{
     flex: 1 0 100%;
 }
@@ -157,7 +159,7 @@
 }
 .transition-right{
    animation-name: move-right;
-   animation-duration: 5s;
+   animation-duration: 3s;
 }
 
 @keyframes move-left {
@@ -166,5 +168,5 @@
 }
 .transition-left{
    animation-name: move-left;
-   animation-duration: 5s;
+   animation-duration: 3s;
 }
