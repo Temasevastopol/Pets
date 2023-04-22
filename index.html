@@ -15,6 +15,12 @@
                 <h3 class="logo-title">Cozy House</h3>
                 <p class="logo-subtitle">Shelter for pets in Boston</p>
             </a>
+            <input type="checkbox" id="menu__toggle">
+            <label for="menu__toggle" class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
             <nav>
                 <ul>
                     <li><a class="paragraph-l" href="#about">About the shelter</a></li>
@@ -22,9 +28,8 @@
                     <li><a class="paragraph-l" href="#help">Help the shelter</a></li>
                     <li><a class="paragraph-l" href="#contacts">Contacts</a></li>
                 </ul>
-            </nav>
+            </nav>            
         </div>
-        
     </header>
     <main>
         <section class="start_screen">
@@ -53,24 +58,33 @@
         </section>
         <section class="pets" id="pets">            
             <div class="pets-contant">
-                <h3>Our friends who are looking for a house</h3>
+                <h3>
+                    <span>Our friends who</span>
+                    <span>are looking for a house</span>
+                </h3>
                 <div class="slider">
                     <button class="button-arrow"></button>
-                    <div class="card">
-                        <div class="slider-foto"></div>
-                        <h4 class="slider-title">Katrine</h4>
-                        <button class="button-secondary">Learn more</button>
-                    </div>
-                    <div class="card">
-                        <div class="slider-foto"></div>
-                        <h4 class="slider-title">Jennifer</h4>
-                        <button class="button-secondary">Learn more</button>
-                    </div>
-                    <div class="card">
-                        <div class="slider-foto"></div>
-                        <h4 class="slider-title">Woody</h4>
-                        <button class="button-secondary">Learn more</button>
-                    </div>                        
+                    <div class="carusel">
+                        <div class="slider-wraper">
+                            <div class="item_active" id="item_active">
+                                <div class="card">
+                                    <div class="slider-foto"></div>
+                                    <h4 class="slider-title">Katrine</h4>
+                                    <button class="button-secondary">Learn more</button>
+                                </div>
+                                <div class="card">
+                                    <div class="slider-foto"></div>
+                                    <h4 class="slider-title">Jennifer</h4>
+                                    <button class="button-secondary">Learn more</button>
+                                </div>
+                                <div class="card">
+                                    <div class="slider-foto"></div>
+                                    <h4 class="slider-title">Woody</h4>
+                                    <button class="button-secondary">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
                     <button class="button-arrow"></button>
                 </div>                
                 <form action="./src/assets/css/page_2/index.html">
@@ -163,6 +177,8 @@
             <div class="footer-puppy"></div>
         </div>
     </footer>
-    <script src="./app.js"></script>
+    <script type = "module" src="./js/console.js"></script>
+    <script type = "module" src="./js/burger.js"></script>
+    <script typ = "module" src="./js/slider.js"></script>
 </body>
 </html>

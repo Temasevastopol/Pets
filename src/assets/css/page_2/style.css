@@ -15,6 +15,10 @@ header{
 nav ul li a:hover{
     color: #4C4C4C;
 }
+#menu__toggle:checked + label > .line{
+    border:solid 1px #FAFAFA;
+    transition: 0.5s ease-in-out;
+}
 .pets {
     height: 1342px;    
     display: flex;
@@ -37,6 +41,10 @@ nav ul li a:hover{
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .cards_container {
     width: 1200px;
@@ -91,9 +99,67 @@ nav ul li a:hover{
     justify-content: space-between;
     align-items: center;
 }
+.burger .line{
+    border: 1px solid #000000;
+}
 .cards_container .card:hover {
     cursor: pointer;
 }
 .cards_container .card:hover > .button-secondary{
     background: #FDDCC4;
+}
+
+/* Media */
+@media (max-width: 1200px){
+    .pets{
+        width: 100%;
+        height: 1733px;
+        padding-top: calc(100%*60/768);
+        align-items: flex-start;
+    }
+    .pets-content{
+        max-width: 708px;
+        width: 100%;
+        height: 1603px;      
+    }
+    .cards_container{
+        max-width: 580px;
+        width: 100%;
+        height: 1365px;  
+    }
+    .card:nth-child(7),
+    .card:nth-child(8){
+        display: none;
+    }
+}
+@media (max-width: 600px){
+    .pets{
+        min-height: 1649px;
+        padding: 0;
+        align-items: center;
+    }
+    .pets-content{
+        max-width: 300px;
+        min-height: 1565px;
+    }
+    .pets-content h1{
+        font-size: 25px;
+        width: 300px;
+        height: 64px;
+        text-align: center;
+    }
+    .card:nth-child(4),
+    .card:nth-child(5),
+    .card:nth-child(6){
+        display: none;
+    }
+    .cards_container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation{
+        width: 300px;
+        height: 52px;
+    }
 }
