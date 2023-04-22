@@ -1,3 +1,7 @@
+:root{
+    --slider-size: -996px;
+}
+
 .pets {
     height: 877px;
     display: flex;
@@ -102,7 +106,8 @@
    .slider{
         max-width: 708px;
         height: 435px;
-   }  
+   }
+   .carusel,
    .slider-wraper,
    .item_active{
     max-width: 580px;
@@ -136,7 +141,7 @@
     .slider .card:nth-child(2) {    
         display: none;
     }
-    .slider-wraper{
+    .carusel{
         order: -1;
         flex-basis: 100%;
     }
@@ -148,25 +153,24 @@
 }
 
 /* for js */
-.center{    
+.center{
     position: relative;
-    left: -996px;
+    left: var(--slider-size);
 }
-
 @keyframes move-right {
-    from {left: -996px;}
-    to {left: -1992px;}
+    from {left: var(--slider-size);}
+    to {left: calc(var(--slider-size)*2);}
 }
 .transition-right{
    animation-name: move-right;
-   animation-duration: 3s;
+   animation-duration: 2s;
 }
 
 @keyframes move-left {
-    from {left: -996px;}
+    from {left: var(--slider-size);}
     to {left: 0px;}
 }
 .transition-left{
    animation-name: move-left;
-   animation-duration: 3s;
+   animation-duration: 2s;
 }
